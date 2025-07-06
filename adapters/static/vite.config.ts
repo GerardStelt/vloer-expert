@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://github.com/GerardStelt/",
+        origin: "https://gerardstelt.github.io/vloer-expert/"
       }),
     ],
   };
