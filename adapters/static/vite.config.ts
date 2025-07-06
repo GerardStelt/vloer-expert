@@ -10,7 +10,6 @@ export default extendConfig(baseConfig, () => {
         input: ["@qwik-city-plan"],
       },
     },
-    base: "vloer-expert/",
     plugins: [
       staticAdapter({
         origin: "https://gerardstelt.github.io"
