@@ -1,0 +1,1 @@
+import{u as s}from"./q-BieoreQu.js";import{_hW as m}from"./q-BieoreQu.js";import"./q-BDb8A3xp.js";const c=r=>{var e,t;const[o]=s();(t=o.value)==null||t.scrollTo({left:((e=o.value)==null?void 0:e.children[r]).offsetLeft,behavior:"smooth"})};export{m as _hW,c as s_HsZntMGX8fk};
