@@ -1,6 +1,6 @@
 import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
-import { HiBars3Outline, HiUserOutline, HiXMarkOutline } from '@qwikest/icons/heroicons';
+import { HiBars3Outline, HiXMarkOutline } from '@qwikest/icons/heroicons';
 import Logo from '../logo/logo';
 
 
@@ -8,6 +8,7 @@ export default component$(() => {
     const menuOpen = useSignal<boolean>(false);
     const location = useLocation();
 
+    // eslint-disable-next-line qwik/no-use-visible-task
     useVisibleTask$(({ track }) => {
         track(() => location.url.pathname);
         document.body.classList.toggle('no-scroll', false);
