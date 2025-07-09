@@ -8,12 +8,13 @@ export default extendConfig(baseConfig, () => {
             ssr: true,
             rollupOptions: {
                 input: ["@qwik-city-plan"],
+                base: "/vloer-expert/",
             },
         },
         plugins: [
             staticAdapter({
                 origin: "https://gerardstelt.github.io",
-                base: "/vloer-expert"
+                base: "/vloer-expert/"
             }),
         ],
     };
