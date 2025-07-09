@@ -26,7 +26,7 @@
           - name: Upload artifact
             uses: actions/upload-pages-artifact@v3
             with:
-              path: './dist'
+              path: './dist/vloer-expert'
           - name: Deploy
             id: deployment
             uses: actions/deploy-pages@v4
