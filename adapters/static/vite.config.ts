@@ -4,7 +4,6 @@ import baseConfig from "../../vite.config";
 
 export default extendConfig(baseConfig, () => {
   return {
-    base: "/vloer-expert/",
     build: {
       ssr: true,
       rollupOptions: {
@@ -13,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://gerardstelt.github.io/vloer-expert/",
+        origin: "https://gerardstelt.github.io/vloer-expert/"
       }),
     ],
   };
