@@ -21,7 +21,7 @@
           - name: Install dependencies
             run: npm install
           - name: Build
-            run: npm run build.server
+            run: npm run build.client
 
           - name: Upload artifact
             uses: actions/upload-pages-artifact@v3
