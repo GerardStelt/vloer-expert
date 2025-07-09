@@ -1,11 +1,11 @@
 import { component$ } from '@builder.io/qwik';
 import { type DocumentHead } from '@builder.io/qwik-city';
 
-import BathRoom from '/public/images/bath-room.png?jsx';
-import KitchenFloor from '/public/images/kitchen-floor.png?jsx';
-import Hallway from '/public/images/hallway.png?jsx';
-import LivingRoom from '/public/images/living-room.png?jsx';
-import Bar from '/public/images/bar.png?jsx';
+import BathRoom from '~/media/bath-room.png?jsx';
+import KitchenFloor from '~/media/kitchen-floor.png?jsx';
+import Hallway from '~/media/hallway.png?jsx';
+import LivingRoom from '~/media/living-room.png?jsx';
+import Bar from '~/media/bar.png?jsx';
 
 export default component$(() => {
     return (

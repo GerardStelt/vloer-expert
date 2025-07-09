@@ -6,13 +6,13 @@ import { Usp } from '~/components/usp/usp';
 import testimonials from '~/data/testimonials.json';
 
 // images
-import FloorRemoval from '/public/images/vloer-verwijderen.jpeg?jsx';
-import FloorHeating from '/public/images/vloer-verwarming.jpeg?jsx';
-import FloorLevelling from '/public/images/vloer-egalisatie.jpeg?jsx';
-import PVCfloor from '/public/images/pvc-vloer.jpeg?jsx';
-import LaminaatFloor from '/public/images/laminaat-vloer.jpeg?jsx';
-import Testimonial1 from '/public/images/testimonial-1.png?jsx';
-import Testimonial2 from '/public/images/testimonial-2.png?jsx';
+import FloorRemoval from '~/media/vloer-verwijderen.jpeg?jsx';
+import FloorHeating from '~/media/vloer-verwarming.jpeg?jsx';
+import FloorLevelling from '~/media/vloer-egalisatie.jpeg?jsx';
+import PVCfloor from '~/media/pvc-vloer.jpeg?jsx';
+import LaminaatFloor from '~/media/laminaat-vloer.jpeg?jsx';
+import Testimonial1 from '~/media/testimonial-1.png?jsx';
+import Testimonial2 from '~/media/testimonial-2.png?jsx';
 
 const imageMap: Record<string, any> = {
     "testimonial-1": Testimonial1,
