@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 import Profile from '~/components/profile/profile';
-import Journey from '~/media/reis.jpg?jsx';
+import Journey from '/public/images/reis.jpg?jsx';
 
 
 export default component$(() => {
