@@ -18,7 +18,7 @@ export default component$(() => {
         <header class="sticky top-0 w-full z-20 bg-white sm:bg-white/90 backdrop-blur-sm shadow-md">
 
             <nav class="container mx-auto p-2.5 flex flex-wrap justify-between group has-[:checked]:h-dvh items-center">
-                <Link href="/" onClick$={() => menuOpen.value = false}><Logo /></Link>
+                <Link href={`${import.meta.env.BASE_URL}`} onClick$={() => menuOpen.value = false}><Logo /></Link>
 
                 <input id="menu-toggle" type="checkbox" class="hidden peer" bind:checked={menuOpen} onChange$={({ target }) => document.body.classList.toggle('no-scroll', (target as HTMLInputElement).checked)} />
                 <label for="menu-toggle" class="sm:hidden">
@@ -28,10 +28,10 @@ export default component$(() => {
 
                 <div class="hidden sm:block max-sm:w-full peer-checked:block h-full">
                     <ol class="flex max-sm:flex-col gap-4 max-sm:text-xl max-sm:font-semibold max-sm:pt-4 *:inline-flex" onClick$={() => menuOpen.value = false}>
-                        <li><Link href="/inspiratie" class="hover:bg-neutral-100 py-4 sm:px-4">Inspiratie</Link></li>
-                        <li><Link href="/over-ons" class="hover:bg-neutral-100 py-4 sm:px-4">Over ons</Link></li>
-                        <li><Link href="/contact" class="hover:bg-neutral-100 py-4 sm:px-4">Contact</Link></li>
-                        <li><Link href="/login" class="hover:bg-neutral-100 p-4 border">Inloggen</Link></li>
+                        <li><Link href={`${import.meta.env.BASE_URL}inspiratie`} class="hover:bg-neutral-100 py-4 sm:px-4">Inspiratie</Link></li>
+                        <li><Link href={`${import.meta.env.BASE_URL}over-ons`} class="hover:bg-neutral-100 py-4 sm:px-4">Over ons</Link></li>
+                        <li><Link href={`${import.meta.env.BASE_URL}contact`} class="hover:bg-neutral-100 py-4 sm:px-4">Contact</Link></li>
+                        <li><Link href={`${import.meta.env.BASE_URL}login`} class="hover:bg-neutral-100 p-4 border">Inloggen</Link></li>
                     </ol>
                 </div>
             </nav>

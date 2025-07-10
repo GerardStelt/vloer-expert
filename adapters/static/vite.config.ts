@@ -7,12 +7,12 @@ export default extendConfig(baseConfig, () => {
         build: {
             ssr: true,
             rollupOptions: {
-                input: ["@qwik-city-plan"]
+                input: ["@qwik-city-plan"],
             }
         },
         plugins: [
             staticAdapter({
-                origin: "https://gerardstelt.github.io"
+                origin: 'https://gerardstelt.github.io'
             })
         ]
     };
